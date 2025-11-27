@@ -6,7 +6,7 @@ import MyComponent from './MyComponent.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <App/>
     <MyComponent/>
   </StrictMode>,
 )
