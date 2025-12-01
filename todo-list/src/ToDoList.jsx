@@ -5,24 +5,24 @@ function ToDoList(){
     const [tasks, setTasks] = useState([]);
     const [newTask, setNewTask] = useState("");
 
-    function handleInputChange(event){
+    function handleInputChange(event) {
         console.log(event.target.value);
         setNewTask(event.target.value);
     }
 
-    function addTask(){
+    function addTask() {
         if(newTask.trim() !== ""){
             setTasks(t => [...t, newTask]);
             setNewTask("");
         }
     }
 
-    function deleteTask(index){
+    function deleteTask(index) {
         const updatedTasks = tasks.filter((_, i) => i !== index);
         setTasks(updatedTasks);
     }
 
-    function moveTaskUp(index){
+    function moveTaskUp(index) {
 
         if(index > 0){
             const updatedTasks = [...tasks];
@@ -32,7 +32,7 @@ function ToDoList(){
         }
     }
 
-    function moveTaskDown(index){
+    function moveTaskDown(index) {
 
         if(index < tasks.length - 1){
             const updatedTasks = [...tasks];

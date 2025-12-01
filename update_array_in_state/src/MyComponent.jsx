@@ -9,7 +9,7 @@ const MyComponent = () => {
 
         const newFood = document.getElementById("foodInput").value;
         document.getElementById("foodInput").value = "";
-        
+
         setFoods(f => [...f, newFood]);
     }
 
