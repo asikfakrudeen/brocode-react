@@ -1,3 +1,7 @@
 import './App.css'
-const App = () => <></>
+import MyComponent from './MyComponent'
+
+const App = () => {
+    return(<><MyComponent/></>)}
+
 export default App

@@ -12,6 +12,7 @@ const UserNameForm = () => {
     return (
         <div>
             <input type = "text" placeholder = "Enter your name" value = {username} onChange = {dynamicTyping} />
+            <input type = "text" placeholder = "Enter your name" value = {username} onChange = {dynamicTyping} />
             <p>Hello, {username}</p>
         </div>);
 }

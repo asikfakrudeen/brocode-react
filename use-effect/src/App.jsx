@@ -1,3 +1,6 @@
 import './App.css'
-const App = () => <></>
+import WindowSize from './components/WindowSize'
+const App = () => <>
+<WindowSize/>
+</>
 export default App

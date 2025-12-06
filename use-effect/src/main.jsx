@@ -5,7 +5,5 @@ import App from './App.jsx'
 import MyComponent from './MyComponent.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <MyComponent/>
-  </StrictMode>,
+    <App/>
 )

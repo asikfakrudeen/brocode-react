@@ -1,0 +1,44 @@
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  padding: 10px;
+  width: 280px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.subscribe-btn {
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2563eb;      /* blue */
+  color: white;
+  letter-spacing: 0.5px;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover effect */
+.subscribe-btn:hover {
+  background: #1e4fcc;
+}
+
+/* Click / active effect */
+.subscribe-btn:active {
+  transform: scale(0.95);
+}
+
+/* Subscribed state (green) */
+.subscribed {
+  background: #16a34a;      /* green */
+}
+
+.subscribed:hover {
+  background: #12863e;
+}

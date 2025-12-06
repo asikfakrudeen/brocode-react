@@ -1,16 +1,23 @@
 // Changing Button Text after Click
 
 import { useState } from "react";
+import "./subscribe-button.css";
 
 const SubscribeButton = () => {
 
-    const initialValue = false;
-    const [subscribed, setSubscribed] = useState(initialValue);
+    const initialState = false;
+    const [isSubscribed, setSubscribed] = useState(initialState);
 
-    const handleSubscribe = () => setSubscribed(true);
+    const handleSubscribe = () => setSubscribed((prev) => (!prev));
 
   return (
-    <button onClick = {handleSubscribe}>{subscribed ? "Subscribed!" : "Subscribe"}</button>
+
+    <div className="button-container">
+        <button onClick = {handleSubscribe} 
+                className = {`subscribe-btn ${isSubscribed ? "subscribed" : ""}`}>
+                    {isSubscribed ? "SUBSCRIBED" : "SUBSCRIBE"}</button>
+    </div>
+    
   );
 }
 
