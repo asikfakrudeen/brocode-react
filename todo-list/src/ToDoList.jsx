@@ -32,6 +32,26 @@ function ToDoList(){
         }
     }
 
+    function sortByIndex(index) {
+
+        if(index > 0){
+            const updatedTasks = [...tasks];
+            [updatedTasks[index], updatedTasks[index - 1]] = 
+            [updatedTasks[index - 1], updatedTasks[index]];
+            setTasks(updatedTasks);
+        }
+    }
+
+        function sortByIndex(index) {
+
+        if(index > 0){
+            const updatedTasks = [...tasks];
+            [updatedTasks[index], updatedTasks[index - 1]] = 
+            [updatedTasks[index - 1], updatedTasks[index]];
+            setTasks(updatedTasks);
+        }
+    }
+
     function moveTaskDown(index) {
 
         if(index < tasks.length - 1){

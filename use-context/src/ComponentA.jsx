@@ -24,7 +24,7 @@ function ComponentA(){
 
     const [user, setUser] = useState("Asikdeen");
 
-    return(
+    return (
         <div className = "box">
             <h1>ComponentA</h1>
             <h2>{`Hello ${user}`}</h2>
